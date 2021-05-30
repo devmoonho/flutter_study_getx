@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 class StateController extends GetxController {
-  static StateController get find => Get.find<StateController>();
+  static StateController get find => Get.find();
 
   int count = 0;
 

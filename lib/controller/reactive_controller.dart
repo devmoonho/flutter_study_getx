@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 enum NUM { FIRST, SECOND }
 
 class ReactiveController extends GetxController {
-  static ReactiveController get find => Get.find<ReactiveController>();
+  static ReactiveController get find => Get.find();
   RxInt count = 0.obs;
   Rx<double> d = 0.0.obs;
   RxString str = ''.obs;

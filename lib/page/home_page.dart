@@ -61,6 +61,13 @@ class HomePage extends StatelessWidget {
               },
               child: Text('dependencyInjection'),
             ),
+            MaterialButton(
+              color: Colors.lightBlue,
+              onPressed: () {
+                Get.toNamed(bindingPage);
+              },
+              child: Text('binding'),
+            ),
           ],
         ),
       ),
