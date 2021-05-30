@@ -25,9 +25,45 @@ class HomePage extends StatelessWidget {
               },
               child: Text('second buttton'),
             ),
+            MaterialButton(
+              color: Colors.amber,
+              onPressed: () {
+                // Get.toNamed(nextPage, arguments: {'name': 'study', 'age': 20});
+                Get.toNamed(nextPage, arguments: User(name: 'study', age: 20));
+              },
+              child: Text('pass arguments'),
+            ),
+            MaterialButton(
+              color: Colors.amber,
+              onPressed: () {
+                Get.toNamed('$userPage/1234?name=study&age=20');
+              },
+              child: Text('pass parameters'),
+            ),
+            MaterialButton(
+              color: Colors.cyan,
+              onPressed: () {
+                Get.toNamed(statePage);
+              },
+              child: Text('state'),
+            ),
+            MaterialButton(
+              color: Colors.cyan,
+              onPressed: () {
+                Get.toNamed(reactivePage);
+              },
+              child: Text('reactive'),
+            ),
           ],
         ),
       ),
     );
   }
+}
+
+class User {
+  String? name;
+  int? age;
+
+  User({this.name, this.age});
 }

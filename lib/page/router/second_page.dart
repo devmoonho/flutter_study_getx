@@ -9,6 +9,7 @@ class SecondPage extends StatelessWidget {
       appBar: AppBar(),
       body: Center(
         child: MaterialButton(
+          color: Colors.cyan,
           onPressed: () {
             /** reomve current page and go to specific page */
             Get.offNamed(rootPage);

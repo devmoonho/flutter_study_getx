@@ -8,6 +8,7 @@ class FirstPage extends StatelessWidget {
       appBar: AppBar(),
       body: Center(
         child: MaterialButton(
+          color: Colors.cyan,
           onPressed: () {
             Get.back();
           },
