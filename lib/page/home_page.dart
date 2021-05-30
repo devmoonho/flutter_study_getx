@@ -54,6 +54,13 @@ class HomePage extends StatelessWidget {
               },
               child: Text('reactive'),
             ),
+            MaterialButton(
+              color: Colors.lightBlue,
+              onPressed: () {
+                Get.toNamed(dependencyInjectionPage);
+              },
+              child: Text('dependencyInjection'),
+            ),
           ],
         ),
       ),
